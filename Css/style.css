@@ -22,13 +22,48 @@ h1{
     font-size: 30px;
     
 }
+/* light mode nav bar */
+.light-dark-nav{
+background-color: var(--secondary-color);
+height: 20%;
+overflow-x: hidden;
+display:flex;
+box-shadow: 0 8px 25px var(--secondary-color);
 
+.nav-left{
+    /* background-color: red; */
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--primary-color);
+}
+.nav-right{
+    /* background-color: blue; */
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
+    
+}
+h3{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+
+
+/* toggle-button */
 #theme-toggle-button {
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 7em;
+  width: 3em;
   cursor: pointer;
+  padding-top: 5px;
+   
 }
 
 
@@ -36,6 +71,7 @@ h1{
   opacity: 0;
   width: 0;
   height: 0;
+  display: none;
 }
 
 #container,
@@ -93,5 +129,3 @@ h1{
 #toggle:checked + svg #stars {
   opacity: 1;
 }
-
-  
