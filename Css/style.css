@@ -4,7 +4,7 @@
   --bg: #fff;
   --bg-dark: #181e27;
   --txt-dark: #e5e6e9;
-  --card: #f0f4f8;
+  --card: #ffffff;
   --card-dark: #242e3c;
   --accent: #ffc94b;
 }
@@ -17,10 +17,12 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+
 body.light-mode {
   background: var(--bg);
   color: var(--txt);
 }
+
 
 .navbar {
   display: flex;
@@ -31,9 +33,13 @@ body.light-mode {
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 
+
+
 body.light-mode .navbar {
   background: var(--bg);
 }
+
+
 
 .nav-left a, .footer-top-right a {
   text-decoration: none;
@@ -42,18 +48,26 @@ body.light-mode .navbar {
   transition: color 0.2s;
 }
 
+
+
 body.light-mode .nav-left a, body.light-mode .footer-top-right a {
   color: var(--txt);
 }
+
+
 
 .nav-left a:hover, .footer-top-right a:hover {
   color: var(--primary);
 }
 
+
+
 .nav-right {
   display: flex;
   align-items: center;
 }
+
+
 
 .theme-switch {
   position: relative;
@@ -62,11 +76,15 @@ body.light-mode .nav-left a, body.light-mode .footer-top-right a {
   height: 24px;
 }
 
+
+
 .theme-switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
+
+
 
 .slider {
   position: absolute;
@@ -76,6 +94,8 @@ body.light-mode .nav-left a, body.light-mode .footer-top-right a {
   border-radius: 24px;
   transition: .3s;
 }
+
+
 
 .slider:before {
   position: absolute;
@@ -89,13 +109,19 @@ body.light-mode .nav-left a, body.light-mode .footer-top-right a {
   border-radius: 50%;
 }
 
+
+
 .theme-switch input:checked + .slider {
   background-color: #222;
 }
 
+
+
 .theme-switch input:checked + .slider:before {
   transform: translateX(20px);
 }
+
+
 
 .hero {
   text-align: center;
@@ -103,9 +129,13 @@ body.light-mode .nav-left a, body.light-mode .footer-top-right a {
   background: linear-gradient(120deg, var(--bg-dark) 70%, var(--primary) 130%);
 }
 
+
+
 body.light-mode .hero {
   background: linear-gradient(120deg, var(--bg) 75%, var(--primary) 130%);
 }
+
+
 
 .hero h1 {
   margin: 0 0 14px 0;
@@ -114,11 +144,15 @@ body.light-mode .hero {
   letter-spacing: 2px;
 }
 
+
+
 .hero h2 {
   font-size: 1.46em;
   margin: 0 0 16px 0;
   color: var(--accent);
 }
+
+
 
 .hero p {
   font-size: 1.13em;
@@ -126,6 +160,8 @@ body.light-mode .hero {
   max-width: 560px;
   margin: auto;
 }
+
+
 
 .education-wrapper {
   display: flex;
@@ -137,6 +173,8 @@ body.light-mode .hero {
   padding: 0 3vw;
 }
 
+
+
 .education-card {
   background: var(--card-dark);
   border-radius: 12px;
@@ -146,22 +184,32 @@ body.light-mode .hero {
   box-shadow: 0 2px 12px rgba(0,0,0,0.14);
   transition: background .3s;
 }
+
+
 body.light-mode .education-card {
   background: var(--card);
 }
+
+
 
 .education-card h2 {
   margin-top: 0;
   font-size: 1.21em;
   color: var(--primary);
 }
+
+
 .education-card ul {
   padding-left: 16px;
 }
+
+
 .education-card li {
   font-size: 1em;
   margin-bottom: 4px;
 }
+
+
 
 .achievements-section {
   max-width: 800px;
@@ -170,12 +218,16 @@ body.light-mode .education-card {
   background: var(--card-dark);
   border-radius: 12px;
 }
+
+
 body.light-mode .achievements-section { background: var(--card); }
 .achievements-section h2 { color: var(--primary); }
 .achievements-section ul {
   padding-left: 24px;
   font-size: 1.08em;
 }
+
+
 
 .contact-section {
   max-width: 540px;
@@ -185,15 +237,27 @@ body.light-mode .achievements-section { background: var(--card); }
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.11);
 }
-body.light-mode .contact-section { background: var(--card); }
 
-.contact-section h2 { color: var(--primary);}
+
+body.light-mode .contact-section {
+   background: var(--card); 
+  }
+
+
+
+.contact-section h2 {
+   color: var(--primary);
+  }
+
+
 .contact-section form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-bottom: 20px;
 }
+
+
 .contact-section input, .contact-section textarea {
   font-size: 1em;
   border: none;
@@ -205,10 +269,14 @@ body.light-mode .contact-section { background: var(--card); }
   resize: none;
   transition: background 0.2s;
 }
+
+
 body.light-mode .contact-section input, body.light-mode .contact-section textarea {
   background: #f4f4f9;
   color: var(--txt);
 }
+
+
 
 .contact-section button {
   background: var(--primary);
@@ -220,10 +288,14 @@ body.light-mode .contact-section input, body.light-mode .contact-section textare
   cursor: pointer;
   transition: background .26s;
 }
+
+
 .contact-section button:hover {
   background: var(--accent);
   color: #192330;
 }
+
+
 .contact-socials a {
   display: inline-block;
   margin-right: 16px;
@@ -234,19 +306,27 @@ body.light-mode .contact-section input, body.light-mode .contact-section textare
   transition: color .2s;
 }
 
+
+
 .contact-socials a:hover {
   color: var(--primary);
 }
+
+
 
 .footer-wrapper {
   margin-top: 70px;
   background: #212835;
   color: #aab8c5;
 }
+
+
 body.light-mode .footer-wrapper {
   background: #e1e7ef;
   color: #473c41;
 }
+
+
 
 .footer-top-section {
   display: flex;
@@ -256,11 +336,15 @@ body.light-mode .footer-wrapper {
   padding: 26px 7vw 14px 7vw;
 }
 
+
+
 .footer-top-left {
   display: flex;
   align-items: center;
   gap: 16px;
 }
+
+
 .site-logo {
   display: inline-block;
   font-size: 2em;
@@ -269,6 +353,8 @@ body.light-mode .footer-wrapper {
   margin-right: 8px;
 }
 
+
+
 .footer-top-right a {
   color: inherit;
   text-decoration: none;
@@ -276,9 +362,13 @@ body.light-mode .footer-wrapper {
   font-size: 1em;
   transition: color .2s;
 }
+
+
 .footer-top-right a:hover {
   color: var(--primary);
 }
+
+
 
 .footer-bottom-section {
   text-align: center;
@@ -287,18 +377,30 @@ body.light-mode .footer-wrapper {
   border-top: 1px solid #334055;
 }
 
+
+
 @media (max-width: 900px) {
   .education-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 18px;
   }
+
+
   .footer-top-section {
     flex-direction: column;
     gap: 10px;
     padding: 22px 4vw 8px 4vw;
   }
+
+
 }
 
-::-webkit-scrollbar { width: 12px; background: #242e3c;}
-::-webkit-scrollbar-thumb { background: #384964; border-radius: 8px;}
+
+
+::-webkit-scrollbar {
+   width: 12px; background: #242e3c;
+  }
+::-webkit-scrollbar-thumb {
+   background: #384964; border-radius: 8px;
+  }
